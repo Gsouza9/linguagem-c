@@ -1,37 +1,40 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(){
+int main()
+{
     system("clear");
     float preco, resultado;
     char forma_pg;
     printf("Digite o valor a ser pago e tecle enter\n");
     scanf("%f", &preco);
 
+    getchar();
+
     printf("DIgite a forma de pagamento, sendo:\nc->crédito\nd->débito\nD->Dinheiro\np->pix");
-    scanf("%c",&forma_pg);
+    scanf("%c", &forma_pg);
 
-    if ( forma_pg == 'c'){
+    if (forma_pg == 'c')
+    {
         resultado = preco * (0.05 + 1);
-        printf("O valor a ser pago no crédito é %f\n",resultado);
+        printf("O valor a ser pago no crédito é %f\n", resultado);
     }
-    else if(forma_pg == 'd'){
+    else if (forma_pg == 'd')
+    {
         printf("O valor a ser pago no débito é %f", preco);
-
     }
-    else if (forma_pg == 'D'){
+    else if (forma_pg == 'D')
+    {
         resultado + preco * 0.98;
-        printf("O valor a ser pago no dinehrio é %f\n",resultado);
-
+        printf("O valor a ser pago no dinehrio é %f\n", resultado);
     }
-    else if (forma_pg == 'p'){
-        resultado = preco *0.96;
-        printf("O valor a ser pago no pix é %f\n",resultado);
-
+    else if (forma_pg == 'p')
+    {
+        resultado = preco * 0.96;
+        printf("O valor a ser pago no pix é %f\n", resultado);
     }
-    else{
+    else
+    {
         printf("ESSA FORMA DE PAGAMENTO NÃO EXISTE");
     }
-    
-    
 }
