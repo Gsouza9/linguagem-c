@@ -58,7 +58,7 @@ int main()
         break;
 
     default:
-        printf("mes inválido");
+        printf("Mes inválido");
         break;
     }
     printf("\n");

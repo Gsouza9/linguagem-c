@@ -16,5 +16,6 @@ int main()
     {
         printf("o numero que voce digitou é par \n", n);
     }
+
     return 0;
 }
